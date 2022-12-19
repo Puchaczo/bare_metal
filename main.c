@@ -4,7 +4,7 @@
 #define BIT_CLR(byte,n) ((byte) &= ~(1<<(n)))
 #define BIT_INS(byte,ins,n) ((byte) |= ((ins)<<(n)))
 
-
+//przerwanie od timera
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim == &htim2)
